@@ -3,10 +3,9 @@
 ## Найпопулярніші запитання та відповіді на співбесіді з HTML
 
 <details>
-<summary><span style="color:orange"><span style="font-family:'Courier New';">1. Що таке HTML?</span></span></summary>
+<summary>1. Що таке HTML?</summary>
 
-HTML (HyperText Markup Language) — це мова розмітки, яка використовується для створення структури веб-сторінок. Вона визначає елементи, такі як заголовки, параграфи, списки, посилання, зображення, таблиці тощо.
-
+- HTML — це мова розмітки для створення та відображення веб-сторінок, яка розшифровується як Hypertext Markup Language.
 </details>
 <details>
 <summary>2. Що таке !DOCTYPE в HTML?</summary>
@@ -18,8 +17,6 @@ HTML (HyperText Markup Language) — це мова розмітки, яка ви
 ```HTML
 <!DOCTYPE html>
 ```
-
-Це декларація для HTML5. Вона не є тегом і не впливає на вміст сторінки, але потрібна для коректної обробки коду браузерами.
 
 </details>
 <details>
@@ -73,4 +70,3 @@ HTML (HyperText Markup Language) — це мова розмітки, яка ви
   - `<br/>` — для переведення на новий рядок.
   - `<input/>` — для елементів форм.
   </details>
-
