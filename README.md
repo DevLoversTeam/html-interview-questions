@@ -2242,7 +2242,28 @@ API, такими як **Service Workers**.
 </details>
 
 <details>
-<summary>78. ???</summary>
+<summary>78. Як відкрити посилання в новій вкладці?</summary>
+
+#### HTML
+
+- Додати атрибут `target="_blank"` до тега `<a>`:
+
+```html
+<a href="https://example.com" target="_blank">Відкрити в новій вкладці</a>
+```
+
+- Рекомендовано також додати `rel="noopener noreferrer"` для безпеки:
+
+```html
+<a href="https://example.com" target="_blank" rel="noopener noreferrer"
+  >Відкрити</a
+>
+```
+
+</details>
+
+<details>
+<summary>79. ???</summary>
 
 #### HTML
 
