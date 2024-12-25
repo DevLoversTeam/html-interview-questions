@@ -2284,7 +2284,30 @@ API, такими як **Service Workers**.
 </details>
 
 <details>
-<summary>80. ???</summary>
+<summary>80. Як створити посилання на файл для завантаження в HTML?</summary>
+
+#### HTML
+
+- Використати `<a>` з атрибутом `download`:
+
+```html
+<a href="files/manual.pdf" download>Завантажити інструкцію</a>
+```
+
+href — шлях до файлу.
+
+download — каже браузеру зберегти файл замість відкриття.
+
+- Можна вказати ім’я:
+
+```html
+<a href="files/manual.pdf" download="Instrukciya.pdf">Завантажити</a>
+```
+
+</details>
+
+<details>
+<summary>81. ???</summary>
 
 #### HTML
 
