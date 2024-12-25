@@ -2202,7 +2202,24 @@ API, такими як **Service Workers**.
 </details>
 
 <details>
-<summary>76. ???</summary>
+<summary>76. Як створити гіперпосилання в HTML?</summary>
+
+#### HTML
+
+- Використовуємо тег `<a>`:
+
+```html
+<a href="https://example.com">Текст посилання</a>
+```
+
+- `href` — адреса, куди веде посилання.
+
+- Можна додати `target="_blank"` для відкриття в новій вкладці.
+
+</details>
+
+<details>
+<summary>77. ???</summary>
 
 #### HTML
 
