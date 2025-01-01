@@ -2307,7 +2307,26 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>81. ???</summary>
+<summary>81. Як вставляти зображення на HTML-сторінку?</summary>
+
+#### HTML
+
+- Використовуємо тег `<img>`:
+
+```html
+<img src="image.jpg" alt="Опис зображення" />
+```
+
+- `src` — шлях до зображення.
+
+- `alt` — текстовий опис для доступності та коли зображення не завантажилось.
+
+- Опційно: `width`, `height`, `title`.
+
+</details>
+
+<details>
+<summary>82. ???</summary>
 
 #### HTML
 
