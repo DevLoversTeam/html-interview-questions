@@ -2365,7 +2365,39 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>84. ???</summary>
+<summary>84. Як створювати карти зображень у HTML?</summary>
+
+#### HTML
+
+- HTML-карта зображень (image map) дозволяє зробити частини зображення
+  клікабельними.
+
+#### Приклад:
+
+```html
+<img src="plan.jpg" usemap="#map1" alt="План будівлі" />
+
+<map name="map1">
+  <area shape="rect" coords="34,44,270,350" href="room1.html" alt="Кімната 1" />
+  <area shape="circle" coords="337,300,44" href="room2.html" alt="Кімната 2" />
+  <area
+    shape="poly"
+    coords="400,50,500,50,450,150"
+    href="room3.html"
+    alt="Кімната 3"
+  />
+</map>
+```
+
+- `usemap="#map1"` — прив’язка картинки до карти.
+
+- `<area>` — задає клікабельну область: `shape (rect, circle, poly)`, `coords` —
+  координати, `href` — посилання.
+
+</details>
+
+<details>
+<summary>85. ???</summary>
 
 #### HTML
 
