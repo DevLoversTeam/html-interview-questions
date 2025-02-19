@@ -957,7 +957,7 @@ document.getElementById("myForm").onsubmit = function() {
 </details>
 
 <details>
-<summary> <span style="color:#368bed">32. Які методи відправки даних форми ви знаєте?</span></summary>
+<summary>32. Які методи відправки даних форми ви знаєте?</summary>
 
 #### HTML
 
@@ -969,13 +969,14 @@ document.getElementById("myForm").onsubmit = function() {
 
 Приклад:
 
-```
+html```
+
 <form action="http://example.com/search" method="get">
     <input type="text" name="query" placeholder="Пошук...">
     <input type="submit" value="Знайти">
 </form>
 
-```
+````
 
 _Переваги:_
 
@@ -993,14 +994,14 @@ _Недоліки:_
 
 Приклад:
 
-```
+html```
 <form action="http://example.com/submit" method="post">
     <input type="text" name="username" placeholder="Ім'я користувача" required>
     <input type="password" name="password" placeholder="Пароль" required>
     <input type="submit" value="Увійти">
 </form>
 
-```
+````
 
 _Переваги:_
 
@@ -1049,9 +1050,9 @@ _Переваги:_
 [MDN link](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Forms/Sending_and_retrieving_form_data)
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">33. Основні атрибути HTML-форм? Як вони впливають на надсилання даних з веб-сторінки?</span></summary>
+<summary>33. Основні атрибути HTML-форм? Як вони впливають на надсилання даних з веб-сторінки?</summary>
 
 #### HTML
 
@@ -1080,9 +1081,9 @@ _Переваги:_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary> <span style="color:#368bed">34. Що таке iframe і для чого його використовують?</span></summary>
+<summary>34. Що таке iframe і для чого його використовують?</summary>
 
 #### HTML
 
@@ -1102,9 +1103,9 @@ _Переваги:_
 [MDN Embedding link](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content/General_embedding_technologies)
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">35. Що таке елемент &lt;canvas&gt;? І для чого він використовується?</span></summary>
+<summary>35. Що таке елемент &lt;canvas&gt;? І для чого він використовується?</summary>
 
 #### HTML
 
@@ -1118,9 +1119,9 @@ _Переваги:_
 - Обробка зображень.
 - Рендеринг ігор або інтерактивних ефектів.
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">36. Різниця між &lt;canvas&gt; та &lt;svg&gt;? У яких випадках краще використовувати &lt;canvas&gt;, а в яких &lt;svg&gt;?</span></summary>
+<summary>36. Різниця між &lt;canvas&gt; та &lt;svg&gt;? У яких випадках краще використовувати &lt;canvas&gt;, а в яких &lt;svg&gt;?</summary>
 
 #### HTML
 
@@ -1170,9 +1171,9 @@ _Переваги:_
 - Менша продуктивність при великій кількості елементів.
 - Не так гнучко, як canvas для складних анімацій або ігор.
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary> <span style="color:#368bed">37. Що ви знаєте про SVG? Які є варіанти додавання SVG на сторінки сайту? Чим вони відрізняються?</span></summary>
+<summary>37. Що ви знаєте про SVG? Які є варіанти додавання SVG на сторінки сайту? Чим вони відрізняються?</summary>
 
 #### HTML
 
@@ -1272,22 +1273,22 @@ _Висновок_
 [MDN link](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial)
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">38. Що таке елемент &lt;output&gt; у HTML5?</span></summary>
+<summary>38. Що таке елемент &lt;output&gt; у HTML5?</summary>
 
 #### HTML
 
 Елемент `<output>` в HTML5 використовується для відображення результату обчислень або взаємодії з формами. Зазвичай використовується для відображення значень, отриманих після введення даних у форму або виконання JavaScript.
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">39. Для чого використовується елемент  &lt;datalist&gt;?</span></summary>
+<summary>39. Для чого використовується елемент  &lt;datalist&gt;?</summary>
 
 #### HTML
 
-Елемент <datalist> використовується для створення списку варіантів, які можна вибрати в полі введення <input>.
+Елемент `<datalist>` використовується для створення списку варіантів, які можна вибрати в полі введення `<input>`.
 
 ```
 <input list="options" name="example">
@@ -1299,9 +1300,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">40. Розкажіть про meta-тег із name="viewport"?</span></summary>
+<summary>40. Розкажіть про meta-тег із name="viewport"?</summary>
 
 #### HTML
 
@@ -1312,9 +1313,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">41. Що таке ApplicationCache в HTML5?</span></summary>
+<summary>41. Що таке ApplicationCache в HTML5?</summary>
 
 #### HTML
 
@@ -1323,9 +1324,9 @@ _Висновок_
 Відповідно до специфікації HTML5, цей механізм був застарілий і замінений новими API, такими як **Service Workers**.
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">42. Що таке srcset? Як працює srcset?</span></summary>
+<summary>42. Що таке srcset? Як працює srcset?</summary>
 
 #### HTML
 
@@ -1338,27 +1339,27 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">43. Навіщо використовується елемент &lt;picture&gt;?</span></summary>
+<summary>43. Навіщо використовується елемент &lt;picture&gt;?</summary>
 
 #### HTML
 
 Елемент **`<picture>`** використовується для визначення різних варіантів зображень в залежності від умов, таких як розмір екрану або роздільна здатність. Це дозволяє вибирати найкраще зображення для конкретного пристрою.
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">44. Що таке властивість valueAsNumber?</span></summary>
+<summary>44. Що таке властивість valueAsNumber?</summary>
 
 #### HTML
 
 Властивість `valueAsNumber` повертає значення елемента форми як число. Воно доступне для елементів, таких як `<input>` з типами `number`, `range` та іншими, де очікується числове введення. Якщо значення не число, властивість повертає `NaN`.
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">45. Навіщо використовується атрибут capture?</span></summary>
+<summary>45. Навіщо використовується атрибут capture?</summary>
 
 #### HTML
 
@@ -1379,9 +1380,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">46. Для чого використовується атрибут decoding enterkeyhint novalidate inputmode pattern?</span></summary>
+<summary>46. Для чого використовується атрибут decoding enterkeyhint novalidate inputmode pattern?</summary>
 
 #### HTML
 
@@ -1407,9 +1408,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">47. Що таке і навіщо потрібний атрибут rel="nofollow" у HTML?</span></summary>
+<summary>47. Що таке і навіщо потрібний атрибут rel="nofollow" у HTML?</summary>
 
 #### HTML
 
@@ -1424,9 +1425,9 @@ _Висновок_
 У цьому випадку, пошукові системи не будуть враховувати це посилання при оцінці сторінки.
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">48. Як семантично правильно згорнути навігаційне меню?</span></summary>
+<summary>48. Як семантично правильно згорнути навігаційне меню?</summary>
 
 #### HTML
 
@@ -1446,9 +1447,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">49. Способи покращення продуктивності веб-сторінки під час використання HTML?</span></summary>
+<summary>49. Способи покращення продуктивності веб-сторінки під час використання HTML?</summary>
 
 #### HTML
 
@@ -1536,9 +1537,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary> <span style="color:#368bed">50. Які теги з найсвіжіших оновлень ви знаєте?</span></summary>
+<summary>50. Які теги з найсвіжіших оновлень ви знаєте?</summary>
 
 #### HTML
 
@@ -1549,7 +1550,7 @@ _Висновок_
 </details>
 
 <details>
-<summary><span style="color:#368bed">51. Які переваги згортання пробілів (collapsing white space) в HTML та CSS?</span></summary>
+<summary>51. Які переваги згортання пробілів (collapsing white space) в HTML та CSS?</summary>
 
 #### HTML
 
@@ -1568,9 +1569,9 @@ _Висновок_
 [MDN link](https://developer.mozilla.org/en-US/docs/Web/CSS/white-space-collapse)
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">52. Як створити посилання на різні розділи на одній веб-сторінці HTML?</span></summary>
+<summary>52. Як створити посилання на різні розділи на одній веб-сторінці HTML?</summary>
 
 #### HTML
 
@@ -1584,9 +1585,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">53. Що таке валідація? Які типи перевірок HTML-документа ви знаєте?</span></summary>
+<summary>53. Що таке валідація? Які типи перевірок HTML-документа ви знаєте?</summary>
 
 #### HTML
 
@@ -1601,9 +1602,9 @@ _Висновок_
 5. **SEO-валидация** — перевірка оптимізації документа для пошукових систем.
 6. **Перевірка швидкодії** — аналіз завантаження та продуктивності.
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">54. Основні етапи перевірок валідності HTML-документа?</span></summary>
+<summary>54. Основні етапи перевірок валідності HTML-документа?</summary>
 
 #### HTML
 
@@ -1614,9 +1615,9 @@ _Висновок_
 11. **Перевірка семантики** — правильне використання семантичних тегів.
 12. **Перевірка посилань** — аналіз працездатності та коректності URL.
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">55. Якщо представити HTML5 як відкриту веб-платформу, з яких блоків він складається?</span></summary>
+<summary>55. Якщо представити HTML5 як відкриту веб-платформу, з яких блоків він складається?</summary>
 
 #### HTML
 
@@ -1628,10 +1629,11 @@ _Висновок_
 18. **Форми** — розширені можливості форм (нові типи input, валідація).
 19. **Продуктивність** — API для оптимізації роботи (Web Workers).
 20. **Доступність** — ARIA-атрибути для покращення доступності.
+
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">56. Що описується в тегі &lt;head&gt;?</span></summary>
+<summary>56. Що описується в тегі &lt;head&gt;?</summary>
 
 #### HTML
 
@@ -1643,10 +1645,11 @@ _Висновок_
 4. **Скрипти** — `<script>` (підключення JavaScript).
 5. **Фавікон** — `<link>` для іконки сайту.
 6. **Інші налаштування** — наприклад, `<base>` для базового URL.
+
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">57. Навіщо потрібен атрибут `autocomplete`? </span></summary>
+<summary>57. Навіщо потрібен атрибут `autocomplete`?</summary>
 
 #### HTML
 
@@ -1658,9 +1661,9 @@ _Висновок_
 `off` — вимикає автозаповнення.
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">58. Як можна приховати елемент розмітки без використання CSS і JS?</span></summary>
+<summary>58. Як можна приховати елемент розмітки без використання CSS і JS?</summary>
 
 #### HTML
 
@@ -1671,9 +1674,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">59. Різниця між &lt;meter&gt; та &lt;progress&gt;?</span></summary>
+<summary>59. Різниця між &lt;meter&gt; та &lt;progress&gt;?</summary>
 
 #### HTML
 
@@ -1692,9 +1695,9 @@ _Висновок_
 ```
 
 </details>
-<!-- ========================================== -->
+
 <details>
-<summary><span style="color:#368bed">60. Розкажіть про тег &lt;samp&gt; ?</span></summary>
+<summary>60. Розкажіть про тег &lt;samp&gt;?</summary>
 
 #### HTML
 
