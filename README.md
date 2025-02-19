@@ -1932,7 +1932,40 @@ API, такими як **Service Workers**.
 </details>
 
 <details>
-<summary>62. ???</summary>
+<summary>62. Опишіть основну структуру HTML-документа.</summary>
+
+#### HTML
+
+- Основна структура HTML-документа:
+
+```html
+<!DOCTYPE html>
+<!-- Оголошення типу документа -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Назва сторінки</title>
+  </head>
+  <body>
+    <!-- Вміст сторінки -->
+  </body>
+</html>
+```
+
+- Складові:
+
+1. `<!DOCTYPE html>` — вказує, що документ у HTML5.
+
+2. `<html>` — кореневий елемент.
+
+3. `<head>` — метадані (кодова сторінка, заголовок, стилі, скрипти).
+
+4. `<body>` — видимий вміст сторінки.
+
+</details>
+
+<details>
+<summary>63. ???</summary>
 
 #### HTML
 
