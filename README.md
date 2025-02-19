@@ -1965,7 +1965,20 @@ API, такими як **Service Workers**.
 </details>
 
 <details>
-<summary>63. ???</summary>
+<summary>63. Що роблять атрибути DOCTYPE та html lang?</summary>
+
+#### HTML
+
+- `<!DOCTYPE html>` — повідомляє браузеру, що документ написаний у стандарті
+  HTML5, щоб уникнути режиму сумісності.
+
+- `lang` у `<html>` — вказує мову вмісту сторінки для пошукових систем, читачів
+  екрану та інших сервісів (наприклад, lang="uk").
+
+</details>
+
+<details>
+<summary>64. ???</summary>
 
 #### HTML
 
