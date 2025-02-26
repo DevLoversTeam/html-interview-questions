@@ -2030,7 +2030,24 @@ API, такими як **Service Workers**.
 </details>
 
 <details>
-<summary>67. ???</summary>
+<summary>67. Як пов'язати JavaScript-файл з HTML-документом?</summary>
+
+#### HTML
+
+- Через тег `<script>`:
+
+```html
+<script src="script.js"></script>
+```
+
+- Зазвичай ставлять перед `</body>`, щоб скрипт завантажувався після HTML.
+
+- Для асинхронного завантаження можна додати `defer` або `async`.
+
+</details>
+
+<details>
+<summary>68. ???</summary>
 
 #### HTML
 
