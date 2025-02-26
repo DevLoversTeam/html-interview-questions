@@ -1991,7 +1991,29 @@ API, такими як **Service Workers**.
 </details>
 
 <details>
-<summary>65. ???</summary>
+<summary>65. Чи можете ви пояснити призначення метатегів у HTML?</summary>
+
+#### HTML
+
+- Метатеги у `<head>` зберігають метадані про сторінку — інформацію, яку не
+  видно користувачу, але використовують браузери, пошукові системи та сервіси.
+
+#### Приклади призначення:
+
+- `<meta charset="UTF-8">` — задає кодування.
+
+- `<meta name="viewport" content="width=device-width, initial-scale=1.0">` —
+  адаптивність на мобільних.
+
+- `<meta name="description" content="Опис сторінки">` — SEO.
+
+- `<meta name="robots" content="index, follow">` — інструкції для пошукових
+  ботів.
+
+</details>
+
+<details>
+<summary>66. ???</summary>
 
 #### HTML
 
