@@ -2013,7 +2013,24 @@ API, такими як **Service Workers**.
 </details>
 
 <details>
-<summary>66. ???</summary>
+<summary>66. Як пов'язати CSS-файл з HTML-документом?</summary>
+
+#### HTML
+
+- У `<head>` додаємо тег:
+
+```html
+<link rel="stylesheet" href="styles.css" />
+```
+
+- `rel="stylesheet"` — вказує, що це файл стилів.
+
+- `href` — шлях до CSS-файлу.
+
+</details>
+
+<details>
+<summary>67. ???</summary>
 
 #### HTML
 
