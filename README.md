@@ -2527,7 +2527,38 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>90. ???</summary>
+<summary>90. Що таке HTML-форми та як їх створити?</summary>
+
+#### HTML
+
+- HTML-форма — це елемент, який збирає дані від користувача та відправляє їх на
+  сервер або обробляє на клієнті.
+
+#### Приклад створення:
+
+```html
+<form action="/submit" method="post">
+  <label for="name">Ім'я:</label>
+  <input type="text" id="name" name="name" />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" />
+
+  <button type="submit">Відправити</button>
+</form>
+```
+
+- `<form>` — контейнер форми.
+- `action` — URL, куди відправляються дані.
+- `method` — спосіб відправки (get або post).
+
+**Поля вводу** (`<input>`, `<textarea>`, `<select>`) + кнопки (`<button>` або
+`<input type="submit">`).
+
+</details>
+
+<details>
+<summary>91. ???</summary>
 
 #### HTML
 
