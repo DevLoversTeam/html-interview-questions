@@ -2603,7 +2603,25 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>92. ???</summary>
+<summary>92. Як зробити вхідні дані форм обов'язковими?</summary>
+
+#### HTML
+
+- Щоб зробити поле форми обов’язковим, додаємо атрибут `required`:
+
+```html
+<input type="email" name="userEmail" required />
+```
+
+- Браузер не дасть відправити форму, поки поле не заповнене.
+
+- Для спеціалізованих типів (email, number, url) додатково перевіряється формат
+  введення.
+
+</details>
+
+<details>
+<summary>93. ???</summary>
 
 #### HTML
 
