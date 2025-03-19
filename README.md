@@ -2677,7 +2677,34 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>95. ???</summary>
+<summary>95. Що нового в HTML5 порівняно з попередніми версіями?</summary>
+
+#### HTML
+
+- Основні нововведення HTML5:
+
+  - Семантичні теги: `<header>`, `<footer>`, `<main>`, `<article>`, `<section>`,
+    `<nav>`.
+
+  - Розширені форми: нові типи `<input>` (email, url, number, date, color тощо)
+    та атрибути (required, placeholder, pattern).
+
+  - Мультимедіа: `<audio>` і `<video>` без сторонніх плагінів.
+
+  - Графіка: `<canvas>` для растрової графіки, `<svg>` для векторної.
+
+  - API для JS: локальне сховище (localStorage, sessionStorage), геолокація,
+    drag-and-drop, Web Workers.
+
+  - Подкастинг та інтеграція: `<figure>`, `<figcaption>` для зображень і
+    підписів.
+
+  - Покращена підтримка мобільних: `<meta name="viewport">` та адаптивність.
+
+</details>
+
+<details>
+<summary>96. ???</summary>
 
 #### HTML
 
