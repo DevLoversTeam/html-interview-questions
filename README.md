@@ -2649,7 +2649,35 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>94. ???</summary>
+<summary>94. Як групувати вхідні дані форм і чому це потрібно робити?</summary>
+
+#### HTML
+
+- Для групування даних у формах використовують `<fieldset>` і `<legend>`:
+
+```html
+<fieldset>
+  <legend>Особисті дані</legend>
+  <label for="name">Ім'я:</label>
+  <input type="text" id="name" name="name" />
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" />
+</fieldset>
+```
+
+#### Навіщо:
+
+- Візуально та логічно об’єднує пов’язані поля.
+
+- Покращує доступність (скрінрідери читають легенду).
+
+- Допомагає структурувати великі форми і робить їх зручнішими для користувача.
+
+</details>
+
+<details>
+<summary>95. ???</summary>
 
 #### HTML
 
