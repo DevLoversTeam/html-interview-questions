@@ -2791,7 +2791,31 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>99. ???</summary>
+<summary>99. Як використовувати елементи figure та figcaption?</summary>
+
+#### HTML
+
+- `<figure>` — контейнер для медіа (зображення, графіка, відео) із підписом.
+
+- `<figcaption>` — підпис до медіа всередині `<figure>`.
+
+#### Приклад:
+
+```html
+<figure>
+  <img src="image.jpg" alt="Опис зображення" />
+  <figcaption>Підпис до зображення</figcaption>
+</figure>
+```
+
+- Покращує семантику та доступність.
+
+- Легко стилізується CSS.
+
+</details>
+
+<details>
+<summary>100. ???</summary>
 
 #### HTML
 
