@@ -2621,7 +2621,35 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>93. ???</summary>
+<summary>93. Яке призначення елемента label у формах?</summary>
+
+#### HTML
+
+- `<label>` пов’язує текстову підказку з елементом форми, щоб користувачу було
+  зрозуміло, що вводити.
+
+#### Переваги:
+
+- Покращує доступність (скрінрідери читають підказку разом із полем).
+
+- Клік по <label> автоматично фокусує пов’язане поле.
+
+#### Приклади:
+
+```html
+<label for="email">Email:</label> <input type="email" id="email" name="email" />
+```
+
+або
+
+```html
+<label> <input type="checkbox" name="agree" /> Погоджуюсь з умовами </label>
+```
+
+</details>
+
+<details>
+<summary>94. ???</summary>
 
 #### HTML
 
