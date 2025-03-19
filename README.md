@@ -2815,7 +2815,32 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>100. ???</summary>
+<summary>100. Як створити таблицю в HTML і які основні теги для цього використовуються?</summary>
+
+#### HTML
+
+- В HTML таблиця створюється тегом `<table>`. Рядки — `<tr>`, заголовки стовпців
+  — `<th>`, комірки — `<td>`.
+
+#### Приклад:
+
+```html
+<table>
+  <tr>
+    <th>Ім'я</th>
+    <th>Вік</th>
+  </tr>
+  <tr>
+    <td>Іван</td>
+    <td>25</td>
+  </tr>
+</table>
+```
+
+</details>
+
+<details>
+<summary>101. ???</summary>
 
 #### HTML
 
