@@ -2854,7 +2854,23 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>102. ???</summary>
+<summary>102. Що таке атрибути colspan і rowspan у HTML-таблицях?</summary>
+
+#### HTML
+
+- `colspan` — об’єднує комірку по кількох стовпцях.
+
+- `rowspan` — об’єднує комірку по кількох рядках.
+
+```html
+<td colspan="2">Об’єднано 2 стовпці</td>
+<td rowspan="3">Об’єднано 3 рядки</td>
+```
+
+</details>
+
+<details>
+<summary>103. ???</summary>
 
 #### HTML
 
