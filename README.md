@@ -2976,7 +2976,43 @@ table {
 </details>
 
 <details>
-<summary>107. ???</summary>
+<summary>107. Як додати субтитри або підписи до відео в HTML?</summary>
+
+#### HTML
+
+- Використати тег `<track>` всередині `<video>`.
+
+- Атрибути `<track>`:
+
+  - `src` — файл субтитрів (формат .vtt).
+
+  - `kind` — тип (subtitles, captions, descriptions, chapters, metadata).
+
+  - `srclang` — мова субтитрів (en, uk).
+
+  - `label` — назва треку в меню.
+
+#### Приклад:
+
+```html
+<video controls>
+  <source src="movie.mp4" type="video/mp4" />
+  <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English" />
+  <track
+    src="subtitles_uk.vtt"
+    kind="subtitles"
+    srclang="uk"
+    label="Українська"
+  />
+</video>
+```
+
+Браузер покаже вибір субтитрів, якщо формат `.vtt` коректний.
+
+</details>
+
+<details>
+<summary>108. ???</summary>
 
 #### HTML
 
