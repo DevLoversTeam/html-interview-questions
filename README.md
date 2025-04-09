@@ -2924,7 +2924,32 @@ table {
 </details>
 
 <details>
-<summary>105. ???</summary>
+<summary>105. Як додати аудіо та відео в HTML-документ за допомогою вбудованих тегів?</summary>
+
+#### HTML
+
+- **Аудіо** — тег `<audio>` з атрибутом controls:
+
+```html
+<audio controls>
+  <source src="sound.mp3" type="audio/mpeg" />
+  Ваш браузер не підтримує аудіо.
+</audio>
+```
+
+- **Відео** — тег `<video>` з атрибутом controls:
+
+```html
+<video controls width="640" height="360">
+  <source src="video.mp4" type="video/mp4" />
+  Ваш браузер не підтримує відео.
+</video>
+```
+
+</details>
+
+<details>
+<summary>106. ???</summary>
 
 #### HTML
 
