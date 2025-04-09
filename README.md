@@ -2889,7 +2889,42 @@ download — каже браузеру зберегти файл замість 
 </details>
 
 <details>
-<summary>104. ???</summary>
+<summary>104. Як зробити HTML-таблицю адаптивною для мобільних пристроїв?</summary>
+
+#### HTML
+
+- Горизонтальний скрол (простий спосіб):
+
+```css
+.table-wrapper {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+```
+
+```html
+<div class="table-wrapper">
+  <table>
+    ...
+  </table>
+</div>
+```
+
+- Перетворення в картки на малих екранах через CSS (display: block + ::before з
+  назвами колонок).
+
+- CSS Grid / Flexbox для кастомних адаптивних таблиць.
+
+- Мінімізувати кількість колонок для мобільних.
+
+</details>
+
+<details>
+<summary>105. ???</summary>
 
 #### HTML
 
