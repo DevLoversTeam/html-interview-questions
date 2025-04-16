@@ -3029,7 +3029,28 @@ table {
 </details>
 
 <details>
-<summary>109. ???</summary>
+<summary>109. Що таке область перегляду (viewport) у веб-розробці та як її налаштувати?</summary>
+
+#### HTML
+
+- Область перегляду — це видима частина веб-сторінки у браузері користувача.
+  Вона важлива для адаптивного дизайну. Налаштовується через мета-тег у
+  `<head>`:
+
+```html
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+```
+
+- `width=device-width` — ширина `viewport` дорівнює ширині екрана пристрою.
+
+- `initial-scale=1` — початковий масштаб сторінки.
+
+Це забезпечує коректне відображення на мобільних пристроях.
+
+</details>
+
+<details>
+<summary>110. ???</summary>
 
 #### HTML
 
