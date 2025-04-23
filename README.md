@@ -3288,7 +3288,29 @@ table {
 </details>
 
 <details>
-<summary>119. ???</summary>
+<summary>119. Як правильно створити семантичну панель навігації в HTML?</summary>
+
+#### HTML
+
+- Використовуємо семантичний тег `<nav>` з внутрішнім списком посилань
+  `<ul><li><a>`. Це забезпечує доступність і правильну структуру.
+
+#### Приклад:
+
+```html
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+```
+
+</details>
+
+<details>
+<summary>120. ???</summary>
 
 #### HTML
 
