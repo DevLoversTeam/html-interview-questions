@@ -3050,7 +3050,35 @@ table {
 </details>
 
 <details>
-<summary>110. ???</summary>
+<summary>110. Як використовуються медіа-запити (media queries) для адаптивного дизайну в HTML/CSS?</summary>
+
+#### HTML
+
+- Медіа-запити дозволяють застосовувати різні стилі залежно від розміру екрану
+  або типу пристрою. Використовуються у CSS, а не в HTML:
+
+```css
+/* Для екранів до 768px */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Для екранів від 769px */
+@media (min-width: 769px) {
+  body {
+    font-size: 16px;
+  }
+}
+```
+
+Так можна робити адаптивний дизайн без зміни HTML-структури.
+
+</details>
+
+<details>
+<summary>111. ???</summary>
 
 #### HTML
 
