@@ -3078,7 +3078,49 @@ table {
 </details>
 
 <details>
-<summary>111. ???</summary>
+<summary>111. Як робити адаптивні зображення для різних пристроїв та роздільної здатності?</summary>
+
+#### HTML
+
+- Використовуються атрибути srcset та sizes у `<img>` або елемент `<picture>`:
+
+**Приклад з `<img>`:**
+
+```html
+<img
+  src="image-800.jpg"
+  srcset="image-400.jpg 400w, image-800.jpg 800w, image-1200.jpg 1200w"
+  sizes="(max-width: 600px) 400px, (max-width: 1200px) 800px, 1200px"
+  alt="Адаптивне зображення"
+/>
+```
+
+**Приклад з `<picture>`:**
+
+```html
+<picture>
+  <source media="(max-width: 600px)" srcset="image-400.jpg" />
+  <source media="(max-width: 1200px)" srcset="image-800.jpg" />
+  <img src="image-1200.jpg" alt="Адаптивне зображення" />
+</picture>
+```
+
+Це дозволяє браузеру обирати оптимальний розмір зображення під пристрій та
+економити трафік.
+
+</details>
+
+<details>
+<summary>112. ???</summary>
+
+#### HTML
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>113. ???</summary>
 
 #### HTML
 
