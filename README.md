@@ -3204,7 +3204,37 @@ table {
 </details>
 
 <details>
-<summary>116. ???</summary>
+<summary>116. Що таке ARIA-ролі і як їх використовувати у веб-розробці?</summary>
+
+#### HTML
+
+- ARIA (Accessible Rich Internet Applications) — це набір атрибутів, які
+  допомагають екранним читачам та іншим допоміжним технологіям розуміти
+  призначення та стан елементів, особливо динамічних.
+
+#### Приклади використання:
+
+```html
+<button aria-label="Закрити модальне вікно">×</button>
+<div role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <h2 id="modalTitle">Форма зворотного зв’язку</h2>
+</div>
+```
+
+- `role` — визначає тип елемента (button, dialog, alert).
+
+- `aria-label` — додає опис для елементів без видимого тексту.
+
+- `aria-labelledby` / `aria-describedby` — пов’язує елемент з текстовим описом.
+
+- `aria-hidden="true"` — ховає елемент від допоміжних технологій.
+
+Використовуйте ARIA тільки коли семантичний HTML не достатній.
+
+</details>
+
+<details>
+<summary>117. ???</summary>
 
 #### HTML
 
