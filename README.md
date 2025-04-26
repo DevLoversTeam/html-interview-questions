@@ -1,6 +1,8 @@
-# HTML
+<h1>
+  HTML <img src="./assets/html.svg" width="40" height="40" />
+</h1>
 
-## Найпопулярніші запитання та відповіді на співбесіді з HTML
+<h2>Найпопулярніші запитання та відповіді на співбесіді з HTML</h2>
 
 <details>
 <summary> <span style="color:#368bed">1. Що таке HTML?</span></summary>
