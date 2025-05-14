@@ -3523,7 +3523,43 @@ table {
 </details>
 
 <details>
-<summary>126. ???</summary>
+<summary>126. Як створити власний HTML-елемент (Custom Element) у браузері?</summary>
+
+#### HTML
+
+- Для створення кастомного елемента використовується API Custom Elements:
+
+1. Створюємо клас, що наслідує `HTMLElement`.
+
+2. Реєструємо його через `customElements.define()`.
+
+3. Використовуємо у розмітці як звичайний тег.
+
+#### Приклад:
+
+```html
+<script>
+  class MyButton extends HTMLElement {
+    constructor() {
+      super();
+      this.innerHTML = `<button>Click me!</button>`;
+    }
+  }
+
+  customElements.define('my-button', MyButton);
+</script>
+
+<my-button></my-button>
+```
+
+- Браузер розпізнає `<my-button>` як нативний елемент.
+
+- Можна додати `Shadow DOM` для інкапсуляції стилів.
+
+</details>
+
+<details>
+<summary>127. ???</summary>
 
 #### HTML
 
