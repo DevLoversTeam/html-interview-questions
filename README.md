@@ -3607,7 +3607,57 @@ table {
 </details>
 
 <details>
-<summary>128. ???</summary>
+<summary>128. Як обробляти події, що надходять від сервера, на фронтенді?</summary>
+
+#### HTML
+
+- Для взаємодії з подіями сервера зазвичай використовують WebSocket або
+  Server-Sent Events (SSE).
+
+1. **Server-Sent Events (SSE)** — для односпрямованих подій від сервера:
+
+```JavaScript
+const eventSource = new EventSource('/events');
+
+eventSource.onmessage = (event) => {
+  console.log('Нові дані від сервера:', event.data);
+};
+
+eventSource.onerror = (err) => {
+  console.error('Помилка SSE:', err);
+};
+```
+
+2. **WebSocket** — для двосторонньої взаємодії:
+
+```JavaScript
+const socket = new WebSocket('ws://localhost:8080');
+
+socket.onopen = () => {
+  console.log('З’єднання встановлено');
+};
+
+socket.onmessage = (event) => {
+  console.log('Повідомлення від сервера:', event.data);
+};
+
+socket.onerror = (err) => {
+  console.error('Помилка WebSocket:', err);
+};
+```
+
+#### Використання:
+
+- Реал-time оновлення UI (чат, сповіщення, лічильники).
+
+- Стримінг даних без перезавантаження сторінки.
+
+- Двостороннє спілкування між клієнтом і сервером.
+
+</details>
+
+<details>
+<summary>129. ???</summary>
 
 #### HTML
 
