@@ -3325,7 +3325,75 @@ table {
 </details>
 
 <details>
-<summary>121. ???</summary>
+<summary>121. Як створити базове випадаюче меню в HTML і CSS без JavaScript?</summary>
+
+#### HTML
+
+- Використовуємо вкладені списки `<ul>` і керуємо показом підменю через
+  `:hover`.
+
+#### Приклад:
+
+```html
+<nav>
+  <ul>
+    <li>
+      <a href="#">Services</a>
+      <ul class="dropdown">
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<style>
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    position: relative;
+    display: inline-block;
+  }
+
+  nav ul li a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  li:hover .dropdown {
+    display: block;
+    background: #f9f9f9;
+  }
+</style>
+```
+
+</details>
+
+<details>
+<summary>122. ???</summary>
+
+#### HTML
+
+- Coming Soon... 😎
+
+</details>
+
+<details>
+<summary>123. ???</summary>
 
 #### HTML
 
