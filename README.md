@@ -3483,7 +3483,47 @@ table {
 </details>
 
 <details>
-<summary>125. ???</summary>
+<summary>125. Що таке Shadow DOM у вебкомпонентах і як його правильно застосовувати?</summary>
+
+#### HTML
+
+- Shadow DOM — це механізм інкапсуляції DOM і стилів усередині вебкомпонента.
+  Він приховує внутрішню реалізацію від зовнішнього коду та запобігає конфліктам
+  CSS/JS.
+
+#### Ключові властивості:
+
+- Створюється через element.attachShadow({ mode: 'open' | 'closed' }).
+
+- Має власне дерево елементів, відокремлене від основного DOM.
+
+- Стилі в Shadow DOM не впливають на глобальні стилі і навпаки.
+
+#### Приклад:
+
+```html
+<div id="host"></div>
+
+<script>
+  const host = document.getElementById('host');
+  const shadow = host.attachShadow({ mode: 'open' });
+
+  shadow.innerHTML = `
+    <style>
+      p { color: red; }
+    </style>
+    <p>Цей текст червоний лише в Shadow DOM</p>
+  `;
+</script>
+```
+
+Використовується головним чином у Web Components, щоб створювати незалежні й
+повторно використовувані UI-елементи.
+
+</details>
+
+<details>
+<summary>126. ???</summary>
 
 #### HTML
 
