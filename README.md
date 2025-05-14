@@ -3429,7 +3429,61 @@ table {
 </details>
 
 <details>
-<summary>124. ???</summary>
+<summary>124. Що таке Web Components у фронтенд-розробці та для чого їх використовують?</summary>
+
+#### HTML
+
+- Web Components — це нативна технологія браузера для створення повторно
+  використовуваних, інкапсульованих UI-компонентів без залежності від
+  фреймворків. Складаються з трьох частин:
+
+1. **Custom Elements** — визначення власних HTML-тегів (`<my-button>`).
+
+2. **Shadow DOM** — ізоляція стилів і DOM-компонента від решти сторінки.
+
+3. **HTML Templates** — заготовки розмітки (`<template>`).
+
+#### Приклад:
+
+```html
+<template id="my-card">
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+  <div class="card"><slot></slot></div>
+</template>
+
+<script>
+  class MyCard extends HTMLElement {
+    constructor() {
+      super();
+      const template = document.getElementById('my-card').content;
+      const shadow = this.attachShadow({ mode: 'open' });
+      shadow.appendChild(template.cloneNode(true));
+    }
+  }
+  customElements.define('my-card', MyCard);
+</script>
+
+<my-card>Привіт! Я веб-компонент</my-card>
+```
+
+#### Використання:
+
+- Створення UI-бібліотек без прив’язки до React/Angular/Vue.
+
+- Інкапсуляція стилів (не конфліктують з глобальними CSS).
+
+- Можна повторно використовувати між різними проєктами чи фреймворками.
+
+</details>
+
+<details>
+<summary>125. ???</summary>
 
 #### HTML
 
