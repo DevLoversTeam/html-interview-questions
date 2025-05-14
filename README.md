@@ -3559,7 +3559,55 @@ table {
 </details>
 
 <details>
-<summary>127. ???</summary>
+<summary>127. Що таке HTML-шаблони template і як їх використовують у веброзробці?</summary>
+
+#### HTML
+
+- `<template>` — це тег для визначення розмітки, яка не відображається на
+  сторінці до моменту її програмного клонування. Використовується разом із
+  JavaScript для динамічного створення контенту.
+
+#### Особливості:
+
+- Вміст шаблона не рендериться при завантаженні сторінки.
+
+- Можна клонувати через template.content.cloneNode(true).
+
+- Часто застосовується у Web Components та при динамічному рендерингу списків.
+
+#### Приклад:
+
+```html
+<template id="item-template">
+  <li class="item">Item</li>
+</template>
+
+<ul id="list"></ul>
+
+<script>
+  const template = document.getElementById('item-template');
+  const list = document.getElementById('list');
+
+  for (let i = 1; i <= 3; i++) {
+    const clone = template.content.cloneNode(true);
+    clone.querySelector('.item').textContent = `Item ${i}`;
+    list.appendChild(clone);
+  }
+</script>
+```
+
+#### Використання:
+
+- Динамічне додавання елементів у DOM.
+
+- Інкапсульована розмітка для вебкомпонентів.
+
+- Повторне використання UI-блоків без дублювання коду.
+
+</details>
+
+<details>
+<summary>128. ???</summary>
 
 #### HTML
 
