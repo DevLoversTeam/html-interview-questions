@@ -3409,7 +3409,27 @@ table {
 </details>
 
 <details>
-<summary>123. ???</summary>
+<summary>123. Як створити розсувне (collapsible/accordion) меню в HTML?</summary>
+
+#### HTML
+
+- Через теги `<details>` і `<summary>`.
+
+```html
+<details>
+  <summary>Services</summary>
+  <ul>
+    <li><a href="#">Web Development</a></li>
+    <li><a href="#">UI/UX Design</a></li>
+    <li><a href="#">SEO</a></li>
+  </ul>
+</details>
+```
+
+</details>
+
+<details>
+<summary>124. ???</summary>
 
 #### HTML
 
