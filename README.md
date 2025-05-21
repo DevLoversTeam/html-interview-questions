@@ -3815,7 +3815,45 @@ if (navigator.geolocation) {
 </details>
 
 <details>
-<summary>134. ???</summary>
+<summary>134. Як у вебдодатках використовувати Local Storage і Session Storage?</summary>
+
+#### HTML
+
+- Це частина Web Storage API для зберігання даних у браузері.
+
+  - `localStorage` — зберігає дані безстроково (доки користувач не очистить
+    вручну або додаток не видалить).
+
+  - `sessionStorage` — зберігає дані тільки в межах поточної сесії браузера
+    (закрив вкладку = дані зникають).
+
+#### Приклад:
+
+```JavaScript
+// Local Storage
+localStorage.setItem("username", "Viktor");
+console.log(localStorage.getItem("username")); // Viktor
+localStorage.removeItem("username");
+
+// Session Storage
+sessionStorage.setItem("theme", "dark");
+console.log(sessionStorage.getItem("theme")); // dark
+sessionStorage.clear();
+```
+
+#### Використання:
+
+- `Local Storage` → збереження налаштувань, токенів, кешованих даних.
+
+- `Session Storage` → тимчасові дані (форма, стан сторінки).
+
+Обидва працюють тільки з рядками (для об’єктів треба `JSON.stringify` /
+`JSON.parse`).
+
+</details>
+
+<details>
+<summary>135. ???</summary>
 
 #### HTML
 
