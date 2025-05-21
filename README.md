@@ -3911,7 +3911,45 @@ sessionStorage.clear();
 </details>
 
 <details>
-<summary>136. ???</summary>
+<summary>136. Що таке Fullscreen API у браузері та для чого його застосовують?</summary>
+
+#### HTML
+
+- Fullscreen API дозволяє елементу сторінки (відео, зображення, canvas, div)
+  переходити в повноекранний режим.
+
+- Використовується для медіа (відеоплеєри, презентації, ігри, карти).
+
+- Підвищує зручність користувача, коли потрібна максимальна концентрація на
+  контенті.
+
+#### Приклад:
+
+```JavaScript
+const elem = document.documentElement;
+
+// Увійти в повноекранний режим
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  }
+}
+
+// Вийти з повноекранного режиму
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  }
+}
+```
+
+Використовується разом із подіями `fullscreenchange`, щоб реагувати на зміни
+стану.
+
+</details>
+
+<details>
+<summary>137. ???</summary>
 
 #### HTML
 
