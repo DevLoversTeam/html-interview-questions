@@ -3719,7 +3719,43 @@ socket.onerror = (err) => {
 </details>
 
 <details>
-<summary>132. ???</summary>
+<summary>132. Як структуровані дані (Schema.org) впливають на SEO та чому їх варто використовувати?</summary>
+
+#### HTML
+
+- Структуровані дані — це спеціальна розмітка (JSON-LD, microdata, RDFa), яка
+  пояснює пошуковим системам значення контенту (напр. продукт, стаття, подія).
+
+- Завдяки схемам пошуковики можуть показувати rich snippets: рейтинг, ціну, FAQ,
+  дату публікації тощо.
+
+- Це покращує CTR (користувачі частіше клікають по результату).
+
+- Вони не напряму підвищують рейтинг, але допомагають пошуковим системам краще
+  індексувати сторінку та зробити її більш привабливою у видачі.
+
+#### Приклад JSON-LD для статті:
+
+```html
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Як оптимізувати HTML для SEO",
+    "author": { "@type": "Person", "name": "Іван Іванов" },
+    "datePublished": "2025-08-18",
+    "publisher": {
+      "@type": "Organization",
+      "name": "MySite"
+    }
+  }
+</script>
+```
+
+</details>
+
+<details>
+<summary>133. ???</summary>
 
 #### HTML
 
