@@ -3853,7 +3853,65 @@ sessionStorage.clear();
 </details>
 
 <details>
-<summary>135. ???</summary>
+<summary>135. Як працює Drag and Drop API у браузері та де його застосовують?</summary>
+
+#### HTML
+
+- Drag and Drop API дозволяє перетягувати елементи на сторінці та обробляти їх
+  "скидання".
+
+#### Ключові події:
+
+- `dragstart` — початок перетягування.
+
+- `dragover` — об’єкт знаходиться над зоною скидання (потрібно викликати
+  event.preventDefault()).
+
+- `drop` — елемент скинуто в зону.
+
+- `dragend` — завершення перетягування.
+
+#### Приклад:
+
+```html
+<div id="drag" draggable="true">Перетягни мене</div>
+<div id="drop" style="width:200px;height:200px;border:1px solid black;">
+  Зона скидання
+</div>
+
+<script>
+  const drag = document.getElementById('drag');
+  const drop = document.getElementById('drop');
+
+  drag.addEventListener('dragstart', e => {
+    e.dataTransfer.setData('text/plain', drag.id);
+  });
+
+  drop.addEventListener('dragover', e => {
+    e.preventDefault(); // дозволяє скидання
+  });
+
+  drop.addEventListener('drop', e => {
+    e.preventDefault();
+    const id = e.dataTransfer.getData('text');
+    const el = document.getElementById(id);
+    drop.appendChild(el);
+  });
+</script>
+```
+
+#### Використання:
+
+- Реалізація `drag-and-drop` інтерфейсів (сортування списків, kanban-дошки).
+
+- Завантаження файлів через "перетягни й скинь".
+
+- Інтерактивні UI (редактори, кастомізація блоків).
+
+</details>
+
+<details>
+<summary>136. ???</summary>
 
 #### HTML
 
