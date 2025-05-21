@@ -3949,7 +3949,30 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>137. ???</summary>
+<summary>137. Як правильно задавати і обробляти кодування символів у HTML?</summary>
+
+#### HTML
+
+- Використовують UTF-8, щоб підтримувати всі символи (латиницю, кирилицю, емодзі
+  тощо).
+
+- Вказують у `<head>` сторінки:
+
+```html
+<meta charset="UTF-8" />
+```
+
+- Сервер також має надсилати правильний заголовок Content-Type: text/html;
+  charset=UTF-8.
+
+- Використання UTF-8 запобігає появі “кракозябр” при відображенні тексту.
+
+Краща практика: всі HTML, CSS і JS файли зберігати в UTF-8 без BOM.
+
+</details>
+
+<details>
+<summary>138. ???</summary>
 
 #### HTML
 
