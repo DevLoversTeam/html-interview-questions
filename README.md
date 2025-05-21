@@ -3657,7 +3657,28 @@ socket.onerror = (err) => {
 </details>
 
 <details>
-<summary>129. ???</summary>
+<summary>129. Які техніки оптимізації HTML допомагають у SEO?</summary>
+
+#### HTML
+
+- Використання семантичних тегів (`<header>`, `<article>`, `<nav>`, `<footer>`).
+
+- Коректна структура заголовків (`<h1>–<h6>`).
+
+- Мета-теги: `title`, `meta description`, `viewport`.
+
+- Атрибути `alt` для зображень.
+
+- Чистий і валідний `HTML` без дублікатів.
+
+- Використання структурованих даних (`Schema.org`).
+
+- Оптимізація швидкості завантаження (мінімізація `DOM`, `lazy-load`).
+
+</details>
+
+<details>
+<summary>130. ???</summary>
 
 #### HTML
 
