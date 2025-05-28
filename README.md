@@ -4064,7 +4064,41 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>142. ???</summary>
+<summary>142. Як працює механізм шаблонів у HTML і для чого він використовується?</summary>
+
+#### HTML
+
+- HTML має нативний тег `<template>` → його вміст не рендериться, доки не буде
+  клонований через JS.
+
+- Шаблон зберігає розмітку, стилі й навіть скрипти, але пасивно, поки не
+  активований.
+
+- Використовується для динамічного рендерингу контенту та у Web Components.
+
+#### Приклад:
+
+```html
+<template id="user-template">
+  <div class="user">
+    <p class="name"></p>
+  </div>
+</template>
+
+<script>
+  const tmpl = document.getElementById('user-template');
+  const clone = tmpl.content.cloneNode(true);
+  clone.querySelector('.name').textContent = 'Alice';
+  document.body.appendChild(clone);
+</script>
+```
+
+Перевага — можна підготувати заготовки UI та багаторазово їх використовувати.
+
+</details>
+
+<details>
+<summary>143. ???</summary>
 
 #### HTML
 
