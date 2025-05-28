@@ -4261,7 +4261,30 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>150. ???</summary>
+<summary>150. Які JavaScript-бібліотеки часто використовують для підвищення інтерактивності HTML-сторінок?</summary>
+
+#### HTML
+
+- `jQuery` → прості маніпуляції DOM і анімації (старі проєкти).
+
+- `GSAP` → складні та плавні анімації.
+
+- `Anime.js` → легкі анімації елементів.
+
+- `Swiper.js` → інтерактивні каруселі і слайдери.
+
+- `Chart.js / D3.js` → інтерактивні графіки та діаграми.
+
+- `Sortable.js / Dragula` → drag-and-drop елементи.
+
+- `Popper.js / Tippy.js` → тултіпи та спливаючі підказки.
+
+Вибір залежить від задачі: анімації, інтерактивні UI, графіки або drag-and-drop.
+
+</details>
+
+<details>
+<summary>151. ???</summary>
 
 #### HTML
 
