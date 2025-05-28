@@ -4192,7 +4192,35 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>147. ???</summary>
+<summary>147. Які основні способи оптимізації часу завантаження HTML-сторінки?</summary>
+
+#### HTML
+
+- Мінімізувати HTML, CSS, JS (видалити пробіли, коментарі).
+
+- Використовувати gzip/brotli стиснення на сервері.
+
+- Кешування (HTTP headers, Service Worker).
+
+- Critical CSS inline → решта асинхронно.
+
+- Ледаче завантаження (loading="lazy") для зображень/iframe.
+
+- Використання CDN для статичних ресурсів.
+
+- Правильне підключення скриптів: defer або async.
+
+- Оптимізація медіа (webp, responsive images).
+
+- Зменшити кількість HTTP-запитів (об’єднання ресурсів).
+
+Головна мета — швидкий First Contentful Paint (FCP) і хороший LCP для
+користувачів і SEO.
+
+</details>
+
+<details>
+<summary>148. ???</summary>
 
 #### HTML
 
