@@ -4028,7 +4028,24 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>140. ???</summary>
+<summary>140. Якими способами перевіряють HTML на валідність і коректність?</summary>
+
+#### HTML
+
+- W3C Validator (офіційний сервіс) для перевірки синтаксису й стандартів.
+
+- Linter-и (наприклад, HTMLHint) — інтегруються в CI/CD або редактор.
+
+- Браузерні DevTools — виявляють помилки розмітки.
+
+- Автоматизоване тестування доступності (axe, Lighthouse).
+
+Валідний HTML = краща сумісність, доступність і SEO.
+
+</details>
+
+<details>
+<summary>141. ???</summary>
 
 #### HTML
 
