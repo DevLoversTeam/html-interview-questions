@@ -4151,7 +4151,28 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>145. ???</summary>
+<summary>145. Як перевірити, що HTML-код відповідає стандартам і найкращим практикам?</summary>
+
+#### HTML
+
+- `Валідатори:` W3C HTML Validator для перевірки синтаксису.
+
+- `Лінтери:` HTMLHint, ESLint (з плагінами для HTML).
+
+- `DevTools Audits:` Chrome Lighthouse → accessibility, SEO, performance.
+
+- `Accessibility-тестування:` axe DevTools, Wave.
+
+- `Code review:` внутрішні стандарти команди, PR-рецензії.
+
+- `CI/CD інтеграція:` автоматичні перевірки валідності та лінтингу при коміті.
+
+Комбо автоматичних інструментів + рев’ю = гарантія дотримання best practices.
+
+</details>
+
+<details>
+<summary>146. ???</summary>
 
 #### HTML
 
