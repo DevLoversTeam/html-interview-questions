@@ -4220,7 +4220,29 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>148. ???</summary>
+<summary>148. Які популярні CSS-фреймворки найчастіше інтегрують із HTML для швидкої розробки UI?</summary>
+
+#### HTML
+
+- `Bootstrap` → найпопулярніший, готові компоненти й grid-система.
+
+- `Tailwind CSS` → утилітарний підхід, висока гнучкість.
+
+- `Foundation (від Zurb)` → адаптивна сітка, компоненти.
+
+- `Bulma` → чистий flexbox-фреймворк, простий у використанні.
+
+- `Materialize` → реалізація Google Material Design.
+
+- `UIkit` → легкий, зручний для швидкого прототипування.
+
+Вибір залежить від потреб: Bootstrap — швидкий старт, Tailwind — кастомні
+дизайн-системи, Bulma/Materialize — простота.
+
+</details>
+
+<details>
+<summary>149. ???</summary>
 
 #### HTML
 
