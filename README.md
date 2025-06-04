@@ -4366,7 +4366,49 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>153. ???</summary>
+<summary>153. Як HTML, CSS та JavaScript працюють разом у веб-розробці?</summary>
+
+#### HTML
+
+- HTML → структура сторінки, семантичні елементи.
+
+- CSS → оформлення: кольори, шрифти, розташування, адаптивність.
+
+- JavaScript → динаміка та інтерактивність (події, анімації, API).
+
+#### Взаємозв’язок:
+
+1. HTML надає «скелет».
+
+2. CSS прикрашає цей скелет.
+
+3. JS робить його живим, реагуючи на події користувача або сервер.
+
+#### Приклад:
+
+```html
+<button id="btn">Клікни мене</button>
+<style>
+  #btn {
+    background: blue;
+    color: white;
+    padding: 10px;
+  }
+</style>
+<script>
+  document
+    .getElementById('btn')
+    .addEventListener('click', () => alert('Привіт!'));
+</script>
+```
+
+HTML + CSS + JS = базова тріада фронтенду, яка формує структуру, стиль і
+поведінку сторінки.
+
+</details>
+
+<details>
+<summary>154. ???</summary>
 
 #### HTML
 
