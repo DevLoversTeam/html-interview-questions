@@ -4284,7 +4284,51 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>151. ???</summary>
+<summary>151. Що таке візуалізація даних у HTML і як її реалізувати на вебсторінці?</summary>
+
+#### HTML
+
+- Візуалізація даних — графічне відображення інформації (діаграми, графіки,
+  карти) прямо в браузері.
+
+- Реалізація в HTML:
+
+1. Canvas API → малювання графіки через JavaScript.
+
+2. SVG → векторна графіка, інтерактивна та масштабована.
+
+3. Бібліотеки JS → полегшують роботу і додають інтерактивність:
+
+   - Chart.js — швидке створення графіків.
+
+   - D3.js — гнучкі й кастомні візуалізації.
+
+   - Plotly.js — інтерактивні графіки з zoom і tooltip.
+
+#### Приклад із Chart.js:
+
+```html
+<canvas id="myChart"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('myChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Green'],
+      datasets: [{ label: 'Votes', data: [12, 19, 7] }],
+    },
+  });
+</script>
+```
+
+Візуалізації роблять дані більш зрозумілими і інтерактивними для користувача.
+
+</details>
+
+<details>
+<summary>152. ???</summary>
 
 #### HTML
 
