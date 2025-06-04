@@ -4328,7 +4328,45 @@ function closeFullscreen() {
 </details>
 
 <details>
-<summary>152. ???</summary>
+<summary>152. Як у HTML реалізується підхід прогресивного вдосконалення (Progressive Enhancement)?</summary>
+
+#### HTML
+
+- **Progressive Enhancement** → спочатку базова функціональність працює на
+  будь-якому браузері, а додаткові можливості додаються через сучасні HTML, CSS
+  і JS.
+
+#### Принципи:
+
+1. Базова розмітка — семантичний HTML для всіх користувачів.
+
+2. Стілі CSS — покращують дизайн, але не ламають функціонал без них.
+
+3. JavaScript — додає інтерактивність та анімації, але сайт працює і без нього.
+
+#### Приклад:
+
+```html
+<form action="/submit" method="POST">
+  <input type="text" name="email" required placeholder="Email" />
+  <button type="submit">Відправити</button>
+</form>
+<script>
+  // JS: покращення UX — валідація на клієнті
+  document.querySelector('form').addEventListener('submit', e => {
+    const email = e.target.email.value;
+    if (!email.includes('@')) e.preventDefault();
+  });
+</script>
+```
+
+Базовий функціонал завжди доступний, а сучасні фічі підвищують зручність і
+інтерктивність.
+
+</details>
+
+<details>
+<summary>153. ???</summary>
 
 #### HTML
 
