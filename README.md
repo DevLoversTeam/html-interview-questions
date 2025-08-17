@@ -3288,7 +3288,376 @@ table {
 </details>
 
 <details>
-<summary>119. ???</summary>
+<summary>119. Як правильно створити семантичну панель навігації в HTML?</summary>
+
+#### HTML
+
+- Використовуємо семантичний тег `<nav>` з внутрішнім списком посилань
+  `<ul><li><a>`. Це забезпечує доступність і правильну структуру.
+
+#### Приклад:
+
+```html
+<nav>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/about">About</a></li>
+    <li><a href="/contact">Contact</a></li>
+  </ul>
+</nav>
+```
+
+</details>
+
+<details>
+<summary>120. Яке значення та користь має використання "хлібних крихт" (breadcrumbs) у веб-навігації?</summary>
+
+#### HTML
+
+- Покращує юзабіліті: користувач бачить своє місце в ієрархії сайту.
+
+- Дозволяє швидко перейти на вищі рівні структури.
+
+- Зменшує кількість кліків до потрібної сторінки.
+
+- Має позитивний вплив на SEO (пошуковики краще розуміють структуру сайту).
+
+</details>
+
+<details>
+<summary>121. Як створити базове випадаюче меню в HTML і CSS без JavaScript?</summary>
+
+#### HTML
+
+- Використовуємо вкладені списки `<ul>` і керуємо показом підменю через
+  `:hover`.
+
+#### Приклад:
+
+```html
+<nav>
+  <ul>
+    <li>
+      <a href="#">Services</a>
+      <ul class="dropdown">
+        <li><a href="#">Web Development</a></li>
+        <li><a href="#">UI/UX Design</a></li>
+        <li><a href="#">SEO</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<style>
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    position: relative;
+    display: inline-block;
+  }
+
+  nav ul li a {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  li:hover .dropdown {
+    display: block;
+    background: #f9f9f9;
+  }
+</style>
+```
+
+</details>
+
+<details>
+<summary>122. Яке призначення атрибута target у тегу 'a' в HTML?</summary>
+
+#### HTML
+
+- Атрибут target визначає, де відкриється посилання:
+
+  - `_self` (за замовчуванням) — відкриває в тій самій вкладці.
+
+  - `_blank` — відкриває у новій вкладці/вікні.
+
+  - `_parent` — відкриває в батьківському фреймі (якщо є фрейми).
+
+  - `_top` — відкриває у всьому вікні, виходячи з фреймів.
+
+  - `customName` — відкриває в конкретному вікні/фреймі з цим ім’ям.
+
+#### Приклад:
+
+```html
+<a href="https://example.com" target="_blank">Відкрити у новій вкладці</a>
+```
+
+</details>
+
+<details>
+<summary>123. Як створити розсувне (collapsible/accordion) меню в HTML?</summary>
+
+#### HTML
+
+- Через теги `<details>` і `<summary>`.
+
+```html
+<details>
+  <summary>Services</summary>
+  <ul>
+    <li><a href="#">Web Development</a></li>
+    <li><a href="#">UI/UX Design</a></li>
+    <li><a href="#">SEO</a></li>
+  </ul>
+</details>
+```
+
+</details>
+
+<details>
+<summary>124. Що таке Web Components у фронтенд-розробці та для чого їх використовують?</summary>
+
+#### HTML
+
+- Web Components — це нативна технологія браузера для створення повторно
+  використовуваних, інкапсульованих UI-компонентів без залежності від
+  фреймворків. Складаються з трьох частин:
+
+1. **Custom Elements** — визначення власних HTML-тегів (`<my-button>`).
+
+2. **Shadow DOM** — ізоляція стилів і DOM-компонента від решти сторінки.
+
+3. **HTML Templates** — заготовки розмітки (`<template>`).
+
+#### Приклад:
+
+```html
+<template id="my-card">
+  <style>
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  </style>
+  <div class="card"><slot></slot></div>
+</template>
+
+<script>
+  class MyCard extends HTMLElement {
+    constructor() {
+      super();
+      const template = document.getElementById('my-card').content;
+      const shadow = this.attachShadow({ mode: 'open' });
+      shadow.appendChild(template.cloneNode(true));
+    }
+  }
+  customElements.define('my-card', MyCard);
+</script>
+
+<my-card>Привіт! Я веб-компонент</my-card>
+```
+
+#### Використання:
+
+- Створення UI-бібліотек без прив’язки до React/Angular/Vue.
+
+- Інкапсуляція стилів (не конфліктують з глобальними CSS).
+
+- Можна повторно використовувати між різними проєктами чи фреймворками.
+
+</details>
+
+<details>
+<summary>125. Що таке Shadow DOM у вебкомпонентах і як його правильно застосовувати?</summary>
+
+#### HTML
+
+- Shadow DOM — це механізм інкапсуляції DOM і стилів усередині вебкомпонента.
+  Він приховує внутрішню реалізацію від зовнішнього коду та запобігає конфліктам
+  CSS/JS.
+
+#### Ключові властивості:
+
+- Створюється через element.attachShadow({ mode: 'open' | 'closed' }).
+
+- Має власне дерево елементів, відокремлене від основного DOM.
+
+- Стилі в Shadow DOM не впливають на глобальні стилі і навпаки.
+
+#### Приклад:
+
+```html
+<div id="host"></div>
+
+<script>
+  const host = document.getElementById('host');
+  const shadow = host.attachShadow({ mode: 'open' });
+
+  shadow.innerHTML = `
+    <style>
+      p { color: red; }
+    </style>
+    <p>Цей текст червоний лише в Shadow DOM</p>
+  `;
+</script>
+```
+
+Використовується головним чином у Web Components, щоб створювати незалежні й
+повторно використовувані UI-елементи.
+
+</details>
+
+<details>
+<summary>126. Як створити власний HTML-елемент (Custom Element) у браузері?</summary>
+
+#### HTML
+
+- Для створення кастомного елемента використовується API Custom Elements:
+
+1. Створюємо клас, що наслідує `HTMLElement`.
+
+2. Реєструємо його через `customElements.define()`.
+
+3. Використовуємо у розмітці як звичайний тег.
+
+#### Приклад:
+
+```html
+<script>
+  class MyButton extends HTMLElement {
+    constructor() {
+      super();
+      this.innerHTML = `<button>Click me!</button>`;
+    }
+  }
+
+  customElements.define('my-button', MyButton);
+</script>
+
+<my-button></my-button>
+```
+
+- Браузер розпізнає `<my-button>` як нативний елемент.
+
+- Можна додати `Shadow DOM` для інкапсуляції стилів.
+
+</details>
+
+<details>
+<summary>127. Що таке HTML-шаблони template і як їх використовують у веброзробці?</summary>
+
+#### HTML
+
+- `<template>` — це тег для визначення розмітки, яка не відображається на
+  сторінці до моменту її програмного клонування. Використовується разом із
+  JavaScript для динамічного створення контенту.
+
+#### Особливості:
+
+- Вміст шаблона не рендериться при завантаженні сторінки.
+
+- Можна клонувати через template.content.cloneNode(true).
+
+- Часто застосовується у Web Components та при динамічному рендерингу списків.
+
+#### Приклад:
+
+```html
+<template id="item-template">
+  <li class="item">Item</li>
+</template>
+
+<ul id="list"></ul>
+
+<script>
+  const template = document.getElementById('item-template');
+  const list = document.getElementById('list');
+
+  for (let i = 1; i <= 3; i++) {
+    const clone = template.content.cloneNode(true);
+    clone.querySelector('.item').textContent = `Item ${i}`;
+    list.appendChild(clone);
+  }
+</script>
+```
+
+#### Використання:
+
+- Динамічне додавання елементів у DOM.
+
+- Інкапсульована розмітка для вебкомпонентів.
+
+- Повторне використання UI-блоків без дублювання коду.
+
+</details>
+
+<details>
+<summary>128. Як обробляти події, що надходять від сервера, на фронтенді?</summary>
+
+#### HTML
+
+- Для взаємодії з подіями сервера зазвичай використовують WebSocket або
+  Server-Sent Events (SSE).
+
+1. **Server-Sent Events (SSE)** — для односпрямованих подій від сервера:
+
+```JavaScript
+const eventSource = new EventSource('/events');
+
+eventSource.onmessage = (event) => {
+  console.log('Нові дані від сервера:', event.data);
+};
+
+eventSource.onerror = (err) => {
+  console.error('Помилка SSE:', err);
+};
+```
+
+2. **WebSocket** — для двосторонньої взаємодії:
+
+```JavaScript
+const socket = new WebSocket('ws://localhost:8080');
+
+socket.onopen = () => {
+  console.log('З’єднання встановлено');
+};
+
+socket.onmessage = (event) => {
+  console.log('Повідомлення від сервера:', event.data);
+};
+
+socket.onerror = (err) => {
+  console.error('Помилка WebSocket:', err);
+};
+```
+
+#### Використання:
+
+- Реал-time оновлення UI (чат, сповіщення, лічильники).
+
+- Стримінг даних без перезавантаження сторінки.
+
+- Двостороннє спілкування між клієнтом і сервером.
+
+</details>
+
+<details>
+<summary>129. ???</summary>
 
 #### HTML
 
